@@ -1,3 +1,10 @@
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+from sklearn.model_selection import train_test_split
+from tensorflow.keras import models, layers
+import tensorflow as tf
+
 selected_columns = ['Industry/Sector', 'Stage', 'Business Model', 'Loyal Customer']
 data_selected = data_company[selected_columns]
 
